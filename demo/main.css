@@ -1,0 +1,17 @@
+	body {
+				text-align: center;
+				color: yellow;
+				background-color: #000000;
+				font-family: courier-new;
+			}
+			
+			input {
+				padding: 5px 8px;
+			}
+			
+			a {
+				color: #3ec3f0;
+				font-size: 24px;
+				display: block;
+				margin: 16px 0px;
+			}
