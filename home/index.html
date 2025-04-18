@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Corrosion-Heroku</title>
+	</head>
+	<body>
+		<h1>Corrosion-Heroku</h1>
+		<input id="url" name="url" placeholder="Enter Url">
+		<input id="go" type="submit" value="Go">
+		<a href="https://github.com/BinBashBanana/Corrosion-Heroku">GitHub</a>
+		<script>
+			function xor(str) {
+				return encodeURIComponent(str.toString().split('').map((char, ind) => ind % 2 ? String.fromCharCode(char.charCodeAt() ^ 2) : char).join(''));
+			}
+			
+			var prUrl = document.getElementById("url"),
+			prGo = document.getElementById("go");
+			
+			function go(url) {
+				window.location.href = "c/" + xor(/^(http:\/\/|https:\/\/)/i.test(url) ? url : "https://" + url);
+			}
+			
+			prUrl.addEventListener("keydown", function(e) {
+				if (e.code == "Enter" && prUrl.value) go(prUrl.value);
+			}, false);
+			
+			prGo.addEventListener("click", function() {
+				if (prUrl.value) go(prUrl.value);
+			}, false);
+		</script>
+	</body>
+</html>
