@@ -5,6 +5,6 @@
 
 
 
-### A service made using TIW static proxy backend, And many different games from different incredible creators.
+### A service made using Corrosion Proxy Backend
 ### Created by the-chicken-man
-### Thanks to: RHW for proxy backend, 3kho for games as well as many different online games sites, and to bearcat for the beta version with was modified lunar
+### Thanks to: 3kho for games as well as many different online games sites, and to bearcat for the beta version which was modified lunar
